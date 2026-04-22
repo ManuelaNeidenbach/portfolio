@@ -1,25 +1,25 @@
-function AboutText() {
+ function AboutText() {
   return (
-    <div className="bg-stone-50 rounded-[28px] p-8 shadow-sm border border-stone-200">
-      <h2 className="text-2xl font-bold text-zinc-900 mb-5">Wer ich bin</h2>
+    <div className="bg-stone-50 min-h-[320px] rounded-[24px] border border-rose-200 p-6 shadow-sm">
+      <h2 className="text-xl font-bold text-zinc-900 mb-4">
+        Wer ich bin
+      </h2>
 
       <div className="space-y-4 text-zinc-700 leading-relaxed">
         <p>
-          Ich bin Manuela und mache aktuell eine Umschulung im Bereich Webdesign.
-          Kreativität begleitet mich schon lange, und genau deshalb begeistert mich
-          die Gestaltung moderner Webseiten besonders.
+          Ich bin Manuela und befinde mich aktuell in der Umschulung im
+          Bereich Webdesign. Kreatives Arbeiten war für mich schon immer
+          wichtig.
         </p>
 
         <p>
-          Mir ist wichtig, etwas Eigenes aufzubauen, mich weiterzuentwickeln und
-          mit meiner Arbeit etwas zu schaffen, das sowohl persönlich als auch
-          beruflich Bedeutung hat.
+          Ich liebe es, moderne Webseiten zu gestalten und mich ständig
+          weiterzuentwickeln.
         </p>
 
         <p>
-          Dieses Portfolio ist ein Teil davon. Es zeigt, wie ich mich entwickle,
-          welche Themen mich bewegen und wie ich Design, Struktur und Persönlichkeit
-          miteinander verbinden möchte.
+          Dieses Portfolio zeigt meinen Weg, meine Projekte und meine
+          Zukunftspläne.
         </p>
       </div>
     </div>
