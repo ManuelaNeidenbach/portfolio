@@ -1,18 +1,22 @@
  function AboutText() {
   return (
-    <div className="bg-transparent min-h-[320px] rounded-[20px] border border-[#d8bcbc] p-6 shadow-sm">
-      <div className="h-full">
-        <p className="text-zinc-700 leading-relaxed">
+    <div className="rounded-[20px] border border-[#d8bcbc] bg-transparent p-5 shadow-sm md:p-6">
+      <h2 className="mb-4 text-xl font-bold text-zinc-900 md:text-2xl">
+        Wer ich bin
+      </h2>
+
+      <div className="space-y-4 text-sm leading-relaxed text-zinc-700 md:text-base">
+        <p>
           Ich bin Manuela und befinde mich aktuell in der Umschulung im Bereich
           Webdesign. Kreatives Arbeiten war für mich schon immer wichtig.
         </p>
 
-        <p className="mt-4 text-zinc-700 leading-relaxed">
+        <p>
           Ich liebe es, moderne Webseiten zu gestalten und mich ständig
           weiterzuentwickeln.
         </p>
 
-        <p className="mt-4 text-zinc-700 leading-relaxed">
+        <p>
           Dieses Portfolio zeigt meinen Weg, meine Projekte und meine
           Zukunftspläne.
         </p>

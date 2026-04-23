@@ -1,12 +1,12 @@
  function HobbySection() {
   return (
     <div>
-      <h2 className="text-2xl font-bold text-center text-zinc-900 mb-4">
+      <h2 className="mb-4 text-center text-2xl font-bold text-zinc-900">
         Meine Hobbys
       </h2>
 
-      <div className="bg-transparent rounded-[20px] border border-[#d8bcbc] p-6 shadow-sm min-h-[180px]">
-        <p className="text-zinc-700 leading-relaxed text-center max-w-3xl mx-auto">
+      <div className="min-h-[160px] rounded-[20px] border border-[#d8bcbc] bg-transparent p-5 shadow-sm md:p-6">
+        <p className="mx-auto max-w-3xl text-center text-sm leading-relaxed text-zinc-700 md:text-base">
           Ich liebe kreative Projekte, Design, Tiere und alles, was mit
           persönlicher Entwicklung und neuen Perspektiven zu tun hat.
           Außerdem interessiere ich mich für selbstständiges Arbeiten,
