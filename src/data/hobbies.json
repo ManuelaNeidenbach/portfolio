@@ -1,0 +1,27 @@
+[
+  {
+    "id": "webdesign",
+    "title": "Webdesign",
+    "description": "Ich liebe es, moderne Webseiten zu gestalten und neue Designs umzusetzen."
+  },
+  {
+    "id": "kreativ",
+    "title": "Kreatives Arbeiten",
+    "description": "Ich arbeite gern kreativ mit Ideen, Gestaltung und neuen Projekten."
+  },
+  {
+    "id": "tiere",
+    "title": "Tiere",
+    "description": "Pferde und Tiere begleiten mein Leben und sind ein wichtiger Ausgleich."
+  },
+  {
+    "id": "natur",
+    "title": "Natur",
+    "description": "Zeit draußen, frische Luft und Natur geben mir neue Energie."
+  },
+  {
+    "id": "lernen",
+    "title": "Weiterentwicklung",
+    "description": "Ich lerne gerne Neues und entwickle mich ständig weiter."
+  }
+]

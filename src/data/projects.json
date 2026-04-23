@@ -1,0 +1,27 @@
+[
+  {
+    "id": "portfolio",
+    "title": "Portfolio Website",
+    "description": "Mein persönliches Portfolio mit React, Tailwind CSS und Routing."
+  },
+  {
+    "id": "zypern",
+    "title": "Zypern Projekt",
+    "description": "Eine eigene Seite über meine Auswanderungspläne nach Zypern."
+  },
+  {
+    "id": "kontakt",
+    "title": "Kontaktseite",
+    "description": "Kontaktformular mit sauberem Design und React Struktur."
+  },
+  {
+    "id": "jsonprojekt",
+    "title": "JSON Datenprojekt",
+    "description": "Dynamische Inhalte aus JSON-Dateien mit map() anzeigen."
+  },
+  {
+    "id": "responsive",
+    "title": "Responsive Design",
+    "description": "Mobile optimierte Darstellung für Smartphone, Tablet und Desktop."
+  }
+]

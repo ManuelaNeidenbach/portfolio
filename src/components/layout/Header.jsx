@@ -30,6 +30,12 @@ function Header() {
             <NavLink to="/contact" className={linkClass}>
               Kontakt
             </NavLink>
+            <NavLink to="/hobbies" className={linkClass}>
+              Hobbys
+            </NavLink>
+            <NavLink to="/projects" className={linkClass}>
+              Projekte
+            </NavLink>
           </nav>
         </div>
       </div>
