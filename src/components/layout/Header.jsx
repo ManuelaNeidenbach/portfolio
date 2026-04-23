@@ -1,4 +1,11 @@
- function Header() {
+ import { NavLink } from 'react-router-dom'
+
+function Header() {
+  const linkClass = ({ isActive }) =>
+    `transition ${
+      isActive ? 'text-sky-600 font-semibold' : 'text-zinc-700 hover:text-sky-600'
+    }`
+
   return (
     <header className="max-w-6xl mx-auto px-4 pt-4 md:px-6 md:pt-6">
       <div className="rounded-2xl border border-[#d8c7c7] bg-[#eadfdf] px-5 py-4 shadow-sm">
@@ -10,19 +17,19 @@
             </span>
           </div>
 
-          <nav className="flex flex-wrap justify-center gap-4 text-sm font-medium text-zinc-700 md:gap-6">
-            <a href="#about" className="transition hover:text-sky-600">
+          <nav className="flex flex-wrap justify-center gap-4 text-sm font-medium md:gap-6">
+            <NavLink to="/" className={linkClass}>
               Start
-            </a>
-            <a href="#about" className="transition hover:text-sky-600">
+            </NavLink>
+            <NavLink to="/about" className={linkClass}>
               Über mich
-            </a>
-            <a href="#cyprus" className="transition hover:text-sky-600">
+            </NavLink>
+            <NavLink to="/cyprus" className={linkClass}>
               Zypern
-            </a>
-            <a href="#contact" className="transition hover:text-sky-600">
+            </NavLink>
+            <NavLink to="/contact" className={linkClass}>
               Kontakt
-            </a>
+            </NavLink>
           </nav>
         </div>
       </div>
