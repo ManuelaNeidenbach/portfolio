@@ -1,42 +1,43 @@
-function ContactSection() {
+ function ContactSection() {
   return (
-    <section
-      id="contact"
-      className="rounded-[24px] border border-stone-300 bg-[#f7f4f3] p-5 shadow-sm md:p-8 lg:p-10"
-    >
-      <h2 className="mb-6 text-3xl font-bold text-zinc-500 md:text-4xl">
-        Kontakt
-      </h2>
+    <section className="space-y-10">
+      <div className="space-y-4">
+        <h1
+          className="text-5xl text-[#1a2233] md:text-6xl"
+          style={{ fontFamily: "'Playfair Display', serif" }}
+        >
+          Kontakt
+        </h1>
+        <div className="h-[3px] w-56 bg-[#d6b1a8]"></div>
+      </div>
 
-      <div className="rounded-[20px] border border-stone-300 bg-[#f7f4f3] p-5 shadow-sm md:p-8">
-        <h3 className="text-center text-2xl font-bold text-zinc-900 md:text-3xl">
+      <div className="max-w-3xl rounded-[28px] border border-[#ddd4d1] bg-[#f8f5f4] p-8 shadow-[0_10px_24px_rgba(0,0,0,0.05)]">
+        <h2 className="text-center text-3xl font-semibold text-[#1f2430]">
           So kannst du mich erreichen
-        </h3>
+        </h2>
 
-        <div className="mx-auto mt-8 max-w-2xl space-y-4">
+        <div className="mt-8 space-y-4">
           <input
             type="text"
             placeholder="Name"
-            className="w-full rounded-full border border-stone-300 bg-stone-50 px-5 py-3 text-center text-sm outline-none transition focus:border-teal-700 md:text-base"
+            className="w-full rounded-full border border-[#d9cfcc] bg-white px-5 py-4 text-lg outline-none transition focus:border-[#b9978f]"
           />
 
           <input
             type="email"
             placeholder="E-Mail"
-            className="w-full rounded-full border border-stone-300 bg-stone-50 px-5 py-3 text-center text-sm outline-none transition focus:border-teal-700 md:text-base"
+            className="w-full rounded-full border border-[#d9cfcc] bg-white px-5 py-4 text-lg outline-none transition focus:border-[#b9978f]"
           />
 
           <textarea
             placeholder="Nachricht"
             rows="7"
-            className="w-full resize-none rounded-[20px] border border-stone-300 bg-stone-50 px-5 py-4 text-sm outline-none transition focus:border-teal-700 md:text-base"
+            className="w-full resize-none rounded-[24px] border border-[#d9cfcc] bg-white px-5 py-4 text-lg outline-none transition focus:border-[#b9978f]"
           ></textarea>
 
-          <div className="flex justify-center pt-2">
-            <button className="rounded-full border border-stone-300 bg-stone-200 px-8 py-3 font-medium text-zinc-800 shadow-sm transition hover:bg-stone-300 lg:hover:scale-105">
-              Senden
-            </button>
-          </div>
+          <button className="rounded-full border border-[#d6c8c3] bg-[#e8dcda] px-8 py-3 text-lg font-semibold text-[#1f2430] transition hover:bg-[#decdca]">
+            Senden
+          </button>
         </div>
       </div>
     </section>

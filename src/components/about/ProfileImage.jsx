@@ -1,15 +1,15 @@
- function ProfileImage() {
-  return (
-    <div className="flex flex-col items-center">
-      <div className="group w-full max-w-[320px] md:max-w-[380px] lg:max-w-[420px]">
-        <div className="flex h-[240px] items-center justify-center rounded-full border border-[#cfaeae] bg-[#dfc6c6] px-6 text-center text-base font-semibold text-zinc-700 shadow-sm transition duration-300 md:h-[280px] lg:h-[340px] lg:grayscale lg:hover:grayscale-0">
-          Bild von mir
-        </div>
-      </div>
+ import profilbild from '../../assets/manuela.jpeg'
 
-      <p className="mt-5 text-xl font-semibold text-zinc-900 md:text-2xl">
-        Manuela Neidenbach
-      </p>
+function ProfileImage() {
+  return (
+    <div className="flex justify-center lg:justify-end">
+      <div className="w-full max-w-[620px]">
+        <img
+          src={profilbild}
+          alt="Manuela Neidenbach"
+          className="h-[420px] w-full rounded-[180px] object-cover shadow-[0_12px_30px_rgba(0,0,0,0.08)] md:h-[520px]"
+        />
+      </div>
     </div>
   )
 }
