@@ -1,4 +1,4 @@
- import { useState } from 'react'
+import { useState } from 'react'
 
 function SuccessMessage({ onReset }) {
   return (
@@ -29,6 +29,7 @@ function ContactForm({ onFormSubmit }) {
     name: '',
     email: '',
     message: '',
+    file: null,
   })
 
   const isFormValid =
@@ -37,11 +38,11 @@ function ContactForm({ onFormSubmit }) {
     formData.message.trim() !== ''
 
   function handleChange(event) {
-    const { name, value } = event.target
+    const { name, value, files } = event.target
 
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: files ? files[0] : value,
     })
   }
 
@@ -50,14 +51,21 @@ function ContactForm({ onFormSubmit }) {
 
     if (!isFormValid) return
 
-    console.log('Formulardaten:', formData)
+    console.log('Formulardaten:', {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+      file: formData.file ? formData.file.name : 'Keine Datei ausgewählt',
+    })
 
     setFormData({
       name: '',
       email: '',
       message: '',
+      file: null,
     })
 
+    event.target.reset()
     onFormSubmit()
   }
 
@@ -89,6 +97,19 @@ function ContactForm({ onFormSubmit }) {
         onChange={handleChange}
         className="w-full resize-none rounded-[24px] border border-[#d9cfcc] bg-white px-5 py-4 text-lg outline-none transition focus:border-[#b9978f]"
       ></textarea>
+
+      <div className="rounded-[24px] border border-[#d9cfcc] bg-white px-5 py-4">
+        <label className="block text-sm font-semibold text-[#1f2430]">
+          Datei anhängen
+        </label>
+
+        <input
+          type="file"
+          name="file"
+          onChange={handleChange}
+          className="mt-3 block w-full text-sm text-[#3b4351] file:mr-4 file:rounded-full file:border-0 file:bg-[#e8dcda] file:px-4 file:py-2 file:font-semibold file:text-[#1f2430]"
+        />
+      </div>
 
       <button
         type="submit"
