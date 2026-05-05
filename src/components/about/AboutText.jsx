@@ -1,6 +1,10 @@
- function AboutText() {
+ import { useTheme } from '../../context/ThemeContext'
+
+function AboutText() {
+  const { isDark } = useTheme()
+
   return (
-    <div className="max-w-[640px] space-y-8 text-[#2e3440]">
+    <div className={`max-w-[640px] space-y-8 ${isDark ? 'text-zinc-100' : 'text-[#2e3440]'}`}>
       <p className="text-2xl leading-relaxed md:text-3xl">
         Ich bin Manuela, leidenschaftlich kreativ, strukturiert und immer auf der
         Suche nach neuen Ideen und Herausforderungen.
