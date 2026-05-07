@@ -1,7 +1,7 @@
  import { useState } from 'react'
 import hobbies from '../data/hobbies.json'
-import DataList from '../components/data/DataList'
-import DataGrid from '../components/data/DataGrid'
+import DataList from '../components/content/DataList'
+import DataGrid from '../components/content/DataGrid'
 
 function Hobbies() {
   const [searchTerm, setSearchTerm] = useState('')

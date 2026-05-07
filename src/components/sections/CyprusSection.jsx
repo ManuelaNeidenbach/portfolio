@@ -1,4 +1,5 @@
- import PagePreviewCard from '../ui/PagePreviewCard'
+ import PagePreviewCard from '../cards/PagePreviewCard'
+import cyprusCards from '../../data/cyprusCards.json'
 
 function CyprusSection() {
   return (
@@ -10,34 +11,20 @@ function CyprusSection() {
         >
           Meine Auswanderung
         </h1>
-        <div className="h-[3px] w-56 bg-[#d6b1a8]"></div>
+
+        <div className="h-1 w-56 bg-[#d6b1a8]"></div>
       </div>
 
       <div className="grid gap-8 md:grid-cols-2">
-        <PagePreviewCard
-          title="Warum Zypern?"
-          text="Hier erzähle ich, warum wir diesen Schritt gehen möchten und was uns an Zypern besonders fasziniert."
-          buttonText="Mehr lesen"
-          to="/details/zypern"
-        />
-        <PagePreviewCard
-          title="Unsere Planung"
-          text="Von Gedanken bis zu echten Vorbereitungen – hier dokumentiere ich unseren Weg."
-          buttonText="Mehr lesen"
-          to="/details/profil"
-        />
-        <PagePreviewCard
-          title="Hoffnungen & Ziele"
-          text="Diese Seite zeigt, welche Wünsche, Ziele und Zukunftsbilder wir mit unserer Auswanderung verbinden."
-          buttonText="Mehr lesen"
-          to="/details/zypern"
-        />
-        <PagePreviewCard
-          title="Unser neuer Lebensabschnitt"
-          text="Ein neuer Ort bedeutet neue Chancen, neue Erfahrungen und ein ganz neues Kapitel."
-          buttonText="Mehr lesen"
-          to="/details/kontakt"
-        />
+        {cyprusCards.map((card) => (
+          <PagePreviewCard
+            key={card.id}
+            title={card.title}
+            text={card.text}
+            buttonText={card.buttonText}
+            to={card.to}
+          />
+        ))}
       </div>
     </section>
   )

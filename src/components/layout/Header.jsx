@@ -4,16 +4,16 @@ import { useTheme } from '../../context/ThemeContext'
 function Header() {
   const { theme, toggleTheme, isDark } = useTheme()
 
-  const linkClass = ({ isActive }) =>
-    `transition duration-200 ${
-      isActive
-        ? isDark
-          ? 'text-white font-semibold'
-          : 'text-[#1f2430] font-semibold'
-        : isDark
-          ? 'text-zinc-300 hover:text-white'
-          : 'text-[#2f3440] hover:text-[#111827]'
-    }`
+ const linkClass = ({ isActive }) =>
+  `relative pb-1 transition duration-200 ${
+    isActive
+      ? isDark
+        ? 'text-white after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-rose-300'
+        : 'text-[#1f2430] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-[#b9978f]'
+      : isDark
+        ? 'text-zinc-300 hover:text-white'
+        : 'text-[#2f3440] hover:text-[#111827]'
+  }`
 
   return (
     <header className="max-w-[1450px] mx-auto px-4 pt-4 md:px-6 md:pt-6">

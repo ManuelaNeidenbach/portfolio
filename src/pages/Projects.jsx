@@ -1,7 +1,7 @@
  import { useState } from 'react'
 import projects from '../data/projects.json'
-import DataList from '../components/data/DataList'
-import DataGrid from '../components/data/DataGrid'
+import DataList from '../components/content/DataList'
+import DataGrid from '../components/content/DataGrid'
 import GitHubProjects from '../components/projects/GitHubProjects'
 import { useTheme } from '../context/ThemeContext'
 
